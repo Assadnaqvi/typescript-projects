@@ -1,15 +1,15 @@
 import inquirer from "inquirer";
  
 let date=new Date()
-console.log(date);
-console.log(date.getDate());
-console.log(date.getDay());
-console.log(date.getFullYear());
-console.log(date.getHours());
-console.log(date.getMonth());
-date.setFullYear(2023);
-date.setMonth(2);
-date.setDate(14);
+console.log("This is the default date ",date);
+console.log("Year",date.getFullYear());
+console.log("Month",date.getMonth()+1);
+console.log("Date",date.getDate());
+console.log("Day",date.getDay());
+console.log("Hours",date.getHours());
+console.log("Minutes",date.getMinutes());
+console.log("Seconds",date.getSeconds());
+
 
 
 let ts = Date.now();
@@ -20,4 +20,4 @@ let month = date_ob.getMonth() + 1;
 let year = date_ob.getFullYear();
 
 // prints date & time in YYYY-MM-DD format
-console.log(year + "-" + month + "-" + date1);
+console.log("year", year + "-" ,"Month" ,"-"+ month + "-" ,"Date" ,"-"+ date1);
